@@ -1,0 +1,93 @@
+{
+  "document": {
+    "category": "csaf_vex",
+    "csaf_version": "2.0",
+    "lang": "en",
+    "publisher": {
+      "category": "other",
+      "name": "Rancher Security team",
+      "namespace": "https://www.rancher.com"
+    },
+    "references": [
+      {
+        "category": "self",
+        "summary": "Source OpenVEX statement",
+        "url": "https://openvex.dev/docs/public/vex-cbf676b118a32bc533181fe44fa9c0809d45b8181910975fa623f26a83523d67"
+      }
+    ],
+    "title": "CSAF VEX: CVE-2026-84303 assessment for k8s.io/kubernetes",
+    "tracking": {
+      "current_release_date": "2026-06-19T00:00:00Z",
+      "id": "openvex-cbf676b118a32bc533181fe44fa9c0809d45b8181910975fa623f26a83523d67",
+      "initial_release_date": "2026-06-19T00:00:00Z",
+      "revision_history": [
+        {
+          "date": "2026-06-19T00:00:00Z",
+          "number": "1",
+          "summary": "Initial CSAF VEX conversion from the OpenVEX statement; VEX status updated to affected."
+        }
+      ],
+      "status": "final",
+      "version": "1"
+    }
+  },
+  "product_tree": {
+    "full_product_names": [
+      {
+        "name": "k8s.io/kubernetes",
+        "product_id": "CSAFPID-0001",
+        "product_identification_helper": {
+          "purl": "pkg:golang/k8s.io/kubernetes"
+        }
+      }
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "cve": "CVE-2026-84303",
+      "flags": [
+        {
+          "date": "2026-06-19T00:00:00Z",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "notes": [
+        {
+          "category": "summary",
+          "text": "The product k8s.io/kubernetes is assessed as affected by CVE-2026-84303, with the vulnerability score set to the product-specific CVSS v3.1 value supplied for this assessment."
+        }
+      ],
+      "product_status": {
+        "known_affected": [
+          "CSAFPID-0001"
+        ]
+      },
+      "scores": [
+        {
+          "cvss_v3": {
+            "version": "3.1",
+            "vectorString": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:L/A:L",
+            "baseScore": 3.4,
+            "baseSeverity": "LOW"
+          },
+          "products": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "category": "impact",
+          "date": "2026-06-19T00:00:00Z",
+          "details": "This assessment marks the product as affected. The supplied CVSS v3.1 score reflects the assessed impact for this product under the stated access and privilege conditions.",
+          "product_ids": [
+            "CSAFPID-0001"
+          ]
+        }
+      ],
+      "title": "CVE-2026-84303 in k8s.io/kubernetes"
+    }
+  ]
+}
