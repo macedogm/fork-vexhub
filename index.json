@@ -3,7 +3,7 @@
   "packages": [
     {
       "id": "pkg:golang/k8s.io/kubernetes",
-      "location": "pkg/golang/k8s.io/kubernetes/k8s.vex.csaf"
+      "location": "pkg/golang/k8s.io/kubernetes/k8s.csaf.json"
     }
   ]
 }
