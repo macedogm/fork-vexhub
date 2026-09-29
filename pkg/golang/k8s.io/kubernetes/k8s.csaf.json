@@ -35,10 +35,28 @@
     "full_product_names": [
       {
         "name": "k8s.io/kubernetes",
-        "product_id": "CSAFPID-0001",
+        "product_id": "CSAFPID-KUBERNETES",
         "product_identification_helper": {
           "purl": "pkg:golang/k8s.io/kubernetes"
         }
+      },
+      {
+        "name": "google.golang.org/grpc",
+        "product_id": "CSAFPID-GRPC",
+        "product_identification_helper": {
+          "purl": "pkg:golang/google.golang.org/grpc"
+        }
+      }
+    ],
+    "relationships": [
+      {
+        "category": "default_component_of",
+        "full_product_name": {
+          "name": "k8s.io/kubernetes with google.golang.org/grpc",
+          "product_id": "CSAFPID-KUBERNETES-GRPC"
+        },
+        "product_reference": "CSAFPID-GRPC",
+        "relates_to_product_reference": "CSAFPID-KUBERNETES"
       }
     ]
   },
@@ -49,7 +67,7 @@
         {
           "date": "2026-06-19T00:00:00Z",
           "product_ids": [
-            "CSAFPID-0001"
+            "CSAFPID-KUBERNETES-GRPC"
           ]
         }
       ],
@@ -61,7 +79,7 @@
       ],
       "product_status": {
         "known_affected": [
-          "CSAFPID-0001"
+          "CSAFPID-KUBERNETES-GRPC"
         ]
       },
       "scores": [
@@ -73,7 +91,7 @@
             "baseSeverity": "LOW"
           },
           "products": [
-            "CSAFPID-0001"
+            "CSAFPID-KUBERNETES-GRPC"
           ]
         }
       ],
@@ -83,7 +101,7 @@
           "date": "2026-06-19T00:00:00Z",
           "details": "This assessment marks the product as affected. The supplied CVSS v3.1 score reflects the assessed impact for this product under the stated access and privilege conditions.",
           "product_ids": [
-            "CSAFPID-0001"
+            "CSAFPID-KUBERNETES-GRPC"
           ]
         }
       ],
